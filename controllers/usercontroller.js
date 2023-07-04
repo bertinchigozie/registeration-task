@@ -111,9 +111,7 @@ exports.forgotPassword = async (req, res, next) => {
 
   try {
     const resetURL = `<a
-        href=${req.protocol}://${req.get(
-      "host"
-    )}/api/v1/users/resetPassword/${resetToken}
+        href=https://banao-task.onrender.com/resetPassword/${resetToken}
       >
         Reset Password
       </a>`;

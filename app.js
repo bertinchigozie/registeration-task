@@ -7,7 +7,7 @@ const authRoute = require("./routes/authRoute");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use("/api/v1/users", authRoute);
+app.use("/", authRoute);
 app.get("/", (req, res) => {
   res.status(200).json({
     message: "Hello World"
